@@ -26,11 +26,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="catalog">
-                    <p>Catalog</p>
-                    <p>Brands</p>
-                    <p>Delivery</p>
-                    <p>FAQ</p>
-                    <p>Payment</p>
+                    <p>Home</p>
+                    <p>Products</p>
+                    <p>Blog</p>
+                    <p>About</p>
+                    <p>Contacts</p>
                 </div>
                 <div className="phoneAndEmail">
                     <div className="iconAndPhone">

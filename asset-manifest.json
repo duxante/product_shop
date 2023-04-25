@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/duxante/product_shop/static/css/main.75dfbcce.css",
-    "main.js": "/duxante/product_shop/static/js/main.f566e411.js",
-    "static/media/logo1.png": "/duxante/product_shop/static/media/logo1.cb05cb65c8ec093f09c6.png",
-    "static/media/slick.svg": "/duxante/product_shop/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/duxante/product_shop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/duxante/product_shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/duxante/product_shop/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/duxante/product_shop/index.html",
-    "main.75dfbcce.css.map": "/duxante/product_shop/static/css/main.75dfbcce.css.map",
-    "main.f566e411.js.map": "/duxante/product_shop/static/js/main.f566e411.js.map"
+    "main.css": "/product_shop/static/css/main.a2c16ed4.css",
+    "main.js": "/product_shop/static/js/main.a62303cc.js",
+    "static/media/logo1.png": "/product_shop/static/media/logo1.cb05cb65c8ec093f09c6.png",
+    "static/media/slick.svg": "/product_shop/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/product_shop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/product_shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/product_shop/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/product_shop/index.html",
+    "main.a2c16ed4.css.map": "/product_shop/static/css/main.a2c16ed4.css.map",
+    "main.a62303cc.js.map": "/product_shop/static/js/main.a62303cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.75dfbcce.css",
-    "static/js/main.f566e411.js"
+    "static/css/main.a2c16ed4.css",
+    "static/js/main.a62303cc.js"
   ]
 }

@@ -1,0 +1,56 @@
+.oneItemHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid #e1dddd;
+    background-color: white;
+}
+
+.oneItemHolder:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.oneItemHolder p {
+    margin-top: 0;
+    color: gray;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.oneItemHolder h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: gray;
+    font-weight: 400;
+}
+
+.oneItemHolder img {
+    max-width: 300px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.priceAndCart{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: rgb(48, 46, 46);
+
+}
+
+.priceAndCart img {
+    max-width: 30px;
+    width: 100%;
+    margin: 0px;
+}
+
+.categoryOfItem {
+    max-width: 300px;
+    text-align: left;
+}

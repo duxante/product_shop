@@ -1,0 +1,55 @@
+.navbarHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.navigation {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    padding: 10px 0;
+}
+
+.logoAndStuff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.logo {
+    max-width: 90px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.logoAndStuff p {
+    color: gray;
+    font-size: 16px;
+}
+
+.logoAndStuff p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.userIconAndCart {
+    display: flex;
+    justify-content: space-between;
+    max-width: 130px;
+    width: 100%;
+}
+
+.userIconAndCart img {
+    max-width: 50px;
+    width: 100%;
+    cursor: pointer;
+}

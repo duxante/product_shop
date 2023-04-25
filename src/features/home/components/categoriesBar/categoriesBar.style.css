@@ -1,0 +1,36 @@
+.categoriesBarHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.categoriesNavigation {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0px auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-top: 20px;
+}
+
+.seeAllCategories a {
+    display: block;
+    color: gray;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.seeAllCategories a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

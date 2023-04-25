@@ -1,0 +1,36 @@
+.trendingbarHolder {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px 0;
+}
+
+.trendingBarNavigation {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0px auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-top: 20px;
+}
+
+.shopAll a {
+    display: block;
+    color: gray;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.shopAll a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

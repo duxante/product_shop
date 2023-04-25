@@ -1,0 +1,22 @@
+.homeSlider {
+    height: 50vh;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.bg1 {
+    background-image: url("https://wallpaper.dog/large/5468314.jpg");
+}
+
+.bg2 {
+    background-image: url("https://images7.alphacoders.com/114/1147129.jpg");
+}
+
+.bg3 {
+    background-image: url("https://cdn.wallpapersafari.com/58/33/uq1DPJ.jpg");
+}

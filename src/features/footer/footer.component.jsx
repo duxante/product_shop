@@ -7,8 +7,8 @@ import youTubeLogo from "../../assets/youTubeLogo.png";
 import instagramLogo from "../../assets/instagramLogo.png";
 import workingHours from "../../assets/workingHours.png";
 import phoneCall from "../../assets/phoneCall.png";
-import mailUs from "../../assets/mailUs.png"
-import location from "../../assets/location.png"
+import mailUs from "../../assets/mailUs.png";
+import location from "../../assets/location.png";
 
 
 

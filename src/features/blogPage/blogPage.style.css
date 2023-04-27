@@ -1,4 +1,4 @@
-.blogHolder{
+.blogPageHolder{
     background-color: #ecf0f1;
     display: flex;
     justify-content: space-between;
@@ -6,11 +6,10 @@
     flex-direction: column;
     width: 100%;
     margin: 0px auto;
-    padding: 20px 0;
 }
 
 .blogItemHolder {
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -18,18 +17,5 @@
     margin: 50px auto;
     padding: 10px 0;
     flex-wrap: wrap;
-    gap: 30px;
-}
-
-.seeAllArticles a {
-    display: block;
-    color: gray;
-    font-size: 17px;
-    text-decoration: none;
-    margin: 20px 0;
-}
-
-.seeAllArticles a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    align-content: flex-end;
 }

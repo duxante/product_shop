@@ -12,6 +12,7 @@ import Home from './features/home/home.component';
 import NotFound from "./features/notFound/notFound.component";
 import CategoriesPage from './features/categories/categoriesPage.component';
 import ShopAll from './features/shop/shopAll.component';
+import BlogPage from './features/blogPage/blogPage.component';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Route path='product_shop/cart' element={<Cart />} />
       <Route path='product_shop/categories' element={<CategoriesPage />} />
       <Route path='product_shop/shop' element={<ShopAll />} />
+      <Route path='product_shop/blogPage' element={<BlogPage />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
     </div>

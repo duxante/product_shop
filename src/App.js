@@ -20,7 +20,7 @@ function App() {
     <div className="App">
     <Navbar />
     <Routes>
-      <Route path='product_shop/' element={<Home />} />
+      <Route path='/' element={<Home />} />
       <Route path='product_shop/profile' element={<Profile />} />
       <Route path='product_shop/cart' element={<Cart />} />
       <Route path='product_shop/categories' element={<CategoriesPage />} />

@@ -7,8 +7,8 @@ const Navbar = () => {
         <div className="navbarHolder">
             <div className="navigation">
                 <div className="logoAndStuff">
-                   <Link to="product_shop/"><img src={logo1} className="logo" /></Link>
-                    <Link to="product_shop/"><p>Home</p></Link>
+                   <Link to="/product_shop"><img src={logo1} className="logo" /></Link>
+                    <Link to="/product_shop"><p>Home</p></Link>
                     <Link to="product_shop/products"><p>Products</p></Link>
                     <Link to="product_shop/blog"><p>Blog</p></Link>
                     <Link to="product_shop/about"><p>About</p></Link>

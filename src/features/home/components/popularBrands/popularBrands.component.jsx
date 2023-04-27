@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./popularBrands.style.css";
-import Heading from "../../../common/heading/heading.component";
+import Heading from "../../../../common/heading/heading.component";
 
 const PopularBrands = () => {
     return(
@@ -14,7 +14,7 @@ const PopularBrands = () => {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Intel_Inside_Logo_%281968-2003%29.svg/2233px-Intel_Inside_Logo_%281968-2003%29.svg.png" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/2048px-HP_logo_2012.svg.png" />
             </div>
-            <Link className="allBrandsLink" to="/allBrands">SEE ALL BRANDS</Link>
+            <Link className="allBrandsLink" to="allBrands">SEE ALL BRANDS</Link>
         </div>
     )
 }

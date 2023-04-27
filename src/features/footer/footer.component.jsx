@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./footer.style.css";
 import logo1 from "../../assets/logo1.png";
 import facebookLogo from "../../assets/facebookLogo.png";
@@ -26,11 +27,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="catalog">
-                    <p>Home</p>
-                    <p>Products</p>
-                    <p>Blog</p>
-                    <p>About</p>
-                    <p>Contacts</p>
+                    <Link to="/product_shop">Home</Link>
+                    <Link to="products">Products</Link>
+                    <Link to="blog">Blog</Link>
+                    <Link to="about">About</Link>
+                    <Link to="contacts">Contacts</Link>
                 </div>
                 <div className="phoneAndEmail">
                     <div className="iconAndPhone">

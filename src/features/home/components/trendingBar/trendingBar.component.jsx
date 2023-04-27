@@ -79,7 +79,7 @@ const TrendingBar = () => {
                 ))}
             </div>
             <div className="shopAll">
-                    <Link to="/shop">SHOP ALL</Link>
+                    <Link to="shop">SHOP ALL</Link>
             </div>
         
         </div>

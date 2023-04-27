@@ -50,7 +50,7 @@ const CategoriesBar = () => {
                 ))}
             </div>
             <div className="seeAllCategories">
-                <Link to="/categories">SEE ALL CATEGORIES</Link>
+                <Link to="categories">SEE ALL CATEGORIES</Link>
             </div>
         </div>
     )

@@ -85,8 +85,15 @@
     gap: 10px;
 }
 
-.catalog p {
+.catalog a {
     margin: 0;
+    color: #91988e;
+    text-decoration: none;
+}
+
+.catalog a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .inputAndEmailIcon input {

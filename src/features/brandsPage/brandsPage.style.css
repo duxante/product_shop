@@ -1,0 +1,42 @@
+.popularBrandsPageHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    /* background-color: white; */
+    padding: 20px 0;
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popularBrandsPageImages{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 10px 0;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.imageAndText img{
+    max-width: 120px;
+    width: 100%;
+    filter: grayscale(0);
+}
+
+.imageAndText img:hover{
+    cursor: pointer;
+    filter: grayscale(100%);
+}

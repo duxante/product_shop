@@ -1,7 +1,13 @@
 {
   "files": {
-    "main.css": "/product_shop/static/css/main.2736149b.css",
-    "main.js": "/product_shop/static/js/main.020dec25.js",
+    "main.css": "/product_shop/static/css/main.5f7583ca.css",
+    "main.js": "/product_shop/static/js/main.d7ab8f48.js",
+    "static/media/garminInstinct.jpg": "/product_shop/static/media/garminInstinct.53e51eb25df403600b35.jpg",
+    "static/media/allYouNeedToKnowAboutMac.jpeg": "/product_shop/static/media/allYouNeedToKnowAboutMac.01bebe44f70c4819a31b.jpeg",
+    "static/media/razer.jpg": "/product_shop/static/media/razer.09b07352258060823f6f.jpg",
+    "static/media/mobilePhones.jpeg": "/product_shop/static/media/mobilePhones.a5ae51c11346e4f2dcde.jpeg",
+    "static/media/camera.jpg": "/product_shop/static/media/camera.2b012eafe032b7730bd5.jpg",
+    "static/media/ps5.jpg": "/product_shop/static/media/ps5.f6770356e45ededa4d6b.jpg",
     "static/media/cartLogo.png": "/product_shop/static/media/cartLogo.64bb99ae717f8329f8a2.png",
     "static/media/logo1.png": "/product_shop/static/media/logo1.cb05cb65c8ec093f09c6.png",
     "static/media/userIconLogo.png": "/product_shop/static/media/userIconLogo.52476574ac6ff872e2bf.png",
@@ -10,11 +16,11 @@
     "static/media/slick.ttf": "/product_shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/product_shop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/product_shop/index.html",
-    "main.2736149b.css.map": "/product_shop/static/css/main.2736149b.css.map",
-    "main.020dec25.js.map": "/product_shop/static/js/main.020dec25.js.map"
+    "main.5f7583ca.css.map": "/product_shop/static/css/main.5f7583ca.css.map",
+    "main.d7ab8f48.js.map": "/product_shop/static/js/main.d7ab8f48.js.map"
   },
   "entrypoints": [
-    "static/css/main.2736149b.css",
-    "static/js/main.020dec25.js"
+    "static/css/main.5f7583ca.css",
+    "static/js/main.d7ab8f48.js"
   ]
 }

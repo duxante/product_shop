@@ -22,11 +22,11 @@ function App() {
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='product_shop/profile' element={<Profile />} />
-      <Route path='product_shop/cart' element={<Cart />} />
-      <Route path='product_shop/categories' element={<CategoriesPage />} />
-      <Route path='product_shop/shop' element={<ShopAll />} />
-      <Route path='product_shop/blogPage' element={<BlogPage />} />
+      <Route path='/profile' element={<Profile />} />
+      <Route path='/cart' element={<Cart />} />
+      <Route path='/categories' element={<CategoriesPage />} />
+      <Route path='/shop' element={<ShopAll />} />
+      <Route path='/blogPage' element={<BlogPage />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
     </div>

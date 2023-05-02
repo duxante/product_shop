@@ -52,7 +52,7 @@ const BlogPage = () => {
     return(
         <div className="blogPageHolder">
             <Heading headingText="Blog" />
-                <div className="blogItemHolder">
+                <div className="blogPageItemHolder">
                     {blogPage.map((oneBlog, index) => (
                         <BlogItem 
                             key={index}

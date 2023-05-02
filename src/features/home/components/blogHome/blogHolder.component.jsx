@@ -3,20 +3,22 @@ import "./blogHolder.style.css";
 import Heading from "../../../../common/heading/heading.component";
 import BlogItem from "../../../../common/category/blogItem/blogItem.component";
 import { Link } from "react-router-dom";
+import allYouNeedToKnowAboutMac from "../../../../assets/allYouNeedToKnowAboutMac.jpeg";
+import mobilePhones from "../../../../assets/mobilePhones.jpeg";
 
 const Blog = () => {
     const [blog, setBlog] = useState([
         {
-            img:"https://www.state.gov/wp-content/uploads/2019/04/Science-Technology-shutterstock_449187505.jpg",
-            date:"21.05.2023.",
-            blogTitle:"Blog primjer 1",
-            blogDescription:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            img: allYouNeedToKnowAboutMac,
+            date: "19.04.2023.",
+            blogTitle: "All You Need To Know About Mac",
+            blogDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae repellendus nihil, odio suscipit provident neque doloribus maxime odit temporibus inventore et, dolorum blanditiis saepe aliquam delectus. Fuga, assumenda aliquid."
         },
         {
-            img:"https://www.macquarie.com/au/en/perspectives/technology/_jcr_content/root/general_hero_copy/mobile-image.coreimg.jpeg/1671162255476/hero-technology-hub.jpeg",
-            date:"19.04.2023.",
-            blogTitle:"Blog primjer 2",
-            blogDescription:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            img: mobilePhones,
+            date: "25.04.2023.",
+            blogTitle: "New iPhone 14 PRO, Worth The Hype?",
+            blogDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae repellendus nihil, odio suscipit provident neque doloribus maxime odit temporibus inventore et, dolorum blanditiis saepe aliquam delectus. Fuga, assumenda aliquid."
         }
     ])
     return(
@@ -34,7 +36,7 @@ const Blog = () => {
                 ))}
             </div>
             <div className="seeAllArticles">
-                <Link to="articles">SEE ALL ARTICLES</Link>
+                <Link to="/blogPage">SEE ALL ARTICLES</Link>
             </div>
         </div>
     )

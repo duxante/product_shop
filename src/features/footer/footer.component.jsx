@@ -27,11 +27,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="catalog">
-                    <Link to="/product_shop">Home</Link>
-                    <Link to="products">Products</Link>
-                    <Link to="blog">Blog</Link>
-                    <Link to="about">About</Link>
-                    <Link to="contacts">Contacts</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/products">Products</Link>
+                    <Link to="/blogPage">Blog</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contacts">Contacts</Link>
                 </div>
                 <div className="phoneAndEmail">
                     <div className="iconAndPhone">

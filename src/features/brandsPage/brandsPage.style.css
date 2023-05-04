@@ -1,3 +1,9 @@
+.holdsEverything{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
 .popularBrandsPageHolder {
     display: flex;
     justify-content: space-between;
@@ -39,3 +45,4 @@
     cursor: pointer;
     filter: grayscale(100%);
 }
+

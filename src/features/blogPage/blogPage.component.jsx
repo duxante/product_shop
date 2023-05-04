@@ -52,18 +52,17 @@ const BlogPage = () => {
     return(
         <div className="blogPageHolder">
             <Heading headingText="Blog" />
-                <div className="blogPageItemHolder">
-                    {blogPage.map((oneBlog, index) => (
-                        <BlogItem 
-                            key={index}
-                            img={oneBlog.img}
-                            date={oneBlog.date}
-                            blogTitle={oneBlog.blogTitle}
-                            blogDescription={oneBlog.blogDescription}
-                        />
-                    ))}
-                </div>
-            <Footer />
+            <div className="blogPageItemHolder">
+                {blogPage.map((oneBlog, index) => (
+                    <BlogItem 
+                        key={index}
+                        img={oneBlog.img}
+                        date={oneBlog.date}
+                        blogTitle={oneBlog.blogTitle}
+                        blogDescription={oneBlog.blogDescription}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

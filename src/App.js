@@ -14,6 +14,7 @@ import CategoriesPage from './features/categories/categoriesPage.component';
 import ShopAll from './features/shop/shopAll.component';
 import BlogPage from './features/blogPage/blogPage.component';
 import BrandsPage from './features/brandsPage/brandsPage.component';
+import Footer from './features/footer/footer.component';
 
 
 
@@ -31,6 +32,7 @@ function App() {
       <Route path='/brandsPage' element={<BrandsPage />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
+    <Footer />
     </div>
   );
 }

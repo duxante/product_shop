@@ -14,7 +14,6 @@ const Home = () => {
             <TrendingBar />
             <PopularBrands />
             <Blog />
-            <Footer />
         </div>
     )
 }

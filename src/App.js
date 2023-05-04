@@ -28,8 +28,8 @@ function App() {
       <Route path='/categories' element={<CategoriesPage />} />
       <Route path='/shop' element={<ShopAll />} />
       <Route path='/blogPage' element={<BlogPage />} />
-      <Route path='*' element={<NotFound />} />
       <Route path='/brandsPage' element={<BrandsPage />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
     </div>
   );

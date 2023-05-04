@@ -13,6 +13,7 @@ import NotFound from "./features/notFound/notFound.component";
 import CategoriesPage from './features/categories/categoriesPage.component';
 import ShopAll from './features/shop/shopAll.component';
 import BlogPage from './features/blogPage/blogPage.component';
+import BrandsPage from './features/brandsPage/brandsPage.component';
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route path='/categories' element={<CategoriesPage />} />
       <Route path='/shop' element={<ShopAll />} />
       <Route path='/blogPage' element={<BlogPage />} />
+      <Route path='/brandsPage' element={<BrandsPage />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
     </div>

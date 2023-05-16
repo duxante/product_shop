@@ -12,6 +12,7 @@ import BlogPage from './features/blogPage/blogPage.component';
 import BrandsPage from './features/brandsPage/brandsPage.component';
 import Footer from './features/footer/footer.component';
 import Products from './features/products/products.componet';
+import AboutPage from './features/aboutPage/aboutPage.componet';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/blogPage" element={<BlogPage />} />
         <Route path="/brandsPage" element={<BrandsPage />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/aboutPage" element={<AboutPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

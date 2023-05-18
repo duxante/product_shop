@@ -1,5 +1,5 @@
 import Heading from '../../common/heading/heading.component';
-import './aboutPage.componet.style.css';
+import './aboutPage.style.css';
 
 const AboutPage = () => {
   return (

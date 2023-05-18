@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link to="/products">Products</Link>
           <Link to="/blogPage">Blog</Link>
           <Link to="/aboutPage">About</Link>
-          <Link to="/contacts">Contacts</Link>
+          <Link to="/contactsPage">Contacts</Link>
         </div>
         <div className="userIconAndCart">
           <Link to="/profile">

@@ -1,0 +1,151 @@
+.aboutPageHolder {
+    background-color: white;
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.aboutTitle{
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.oneTeamMember img{
+    max-width: 100px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.about h3{
+    font-weight: 500;
+}
+
+.ourPrinciples{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.ourPrinciples ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ourTeam{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ourTeamHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.oneTeamMember {
+    display: flex;
+    max-width: 320px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.oneTeamMemberData p{
+    margin: 0px;
+}
+
+.teamName{
+    font-weight: bold;
+}
+
+.teamPosition{
+    color: gray;
+}
+
+.someStats{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.someStatsNumberHolder{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.someStatsNumber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 350px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.inNumbers{
+    color: #ed9e66;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0px auto;
+}
+
+.storeHolder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.storeCredentials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.storeCredentials p{
+    margin: 0px;
+}
+
+
+
+

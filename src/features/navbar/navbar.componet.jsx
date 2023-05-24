@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link to="/contactsPage">Contacts</Link>
         </div>
         <div className="userIconAndCart">
-          <Link to="/profile">
+          <Link to="/profilePage">
             <img src={userIconLogo} alt="user icon" className="userIcon" />
           </Link>
           <Link to="/cart">

@@ -1,0 +1,197 @@
+.profilePageHolder{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    margin: 20px auto;
+    gap: 15px;
+}
+
+.namePhoneBirthInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.shortPersonalInfo{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    max-width: 250px;
+    width: 100%;
+}
+
+.shortPersonalInfo img{
+    max-width: 150px;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.shortPersonalInfo p{
+    margin: 0px auto;
+    color: gray;
+}
+
+.shortPersonalInfo h2{
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.nameAndDateJoinedUnderProfilePhoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.longPersonalInfo{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.longPersonalInfo h2{
+    font-weight: 500;
+}
+
+form{
+    padding: 15px 15px;
+}
+
+form input, select, textarea{
+    border-radius: 4px;
+    padding: 8px 16px;
+    box-shadow: rgb(0 0 0 / 12%) 5px 7px 3px 0px, rgb(0 0 0 / 24%) 0px 1px 2px;
+    border: none;
+    background-color: #c3c7cb54;
+    font-style: italic;
+    font-family: inherit;
+}
+
+form label{
+    font-weight: 600;
+}
+
+.those4AreSame{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.addressInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.countryInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.countryInfo input{
+    width: 97%;
+}
+
+.cityAndPostCode{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cityInfo{
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+}
+
+.postalCodeInfo{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.streetInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.streetInfo input{
+    width: 97%;
+}
+
+.BuildingEntranceFloorApartment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.those4AreAdditionalInfoOnBuildingEntrance{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+}
+
+.commentInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    color: gray;
+    width: 100%;
+}
+
+.bottomBreakLine{
+    margin: 30px auto;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(104 104 104 / 46%), rgb(0 0 0 / 0%));
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(104 104 104 / 46%), rgb(0 0 0 / 0%));
+}
+
+.blueButton{
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 20px auto;
+    max-width: 100px;
+    width: 100%;
+}
+
+.blueButton:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}

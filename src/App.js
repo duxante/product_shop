@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './index.css';
 import Profile from './features/profile/profile.component';
 import Cart from './features/cart/cart.component';
@@ -14,6 +14,7 @@ import Footer from './features/footer/footer.component';
 import Products from './features/products/products.componet';
 import AboutPage from './features/aboutPage/aboutPage.componet';
 import ContactsPage from './features/contactsPage/contactsPage.component';
+import ProfilePage from './features/profilePage/profilePage.component';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/aboutPage" element={<AboutPage />} />
         <Route path="/contactsPage" element={<ContactsPage />} />
+        <Route path="/profilePage" element={<ProfilePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

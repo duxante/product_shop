@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link to="/profilePage">
             <img src={userIconLogo} alt="user icon" className="userIcon" />
           </Link>
-          <Link to="/cart">
+          <Link to="/cartPage">
             <img src={cartLogo} alt="shopping cart" className="shoppingcart" />
           </Link>
         </div>

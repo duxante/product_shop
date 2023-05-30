@@ -15,6 +15,7 @@ import Products from './features/products/products.componet';
 import AboutPage from './features/aboutPage/aboutPage.componet';
 import ContactsPage from './features/contactsPage/contactsPage.component';
 import ProfilePage from './features/profilePage/profilePage.component';
+import CartPage from './features/cartPage/cartPage.component';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/aboutPage" element={<AboutPage />} />
         <Route path="/contactsPage" element={<ContactsPage />} />
         <Route path="/profilePage" element={<ProfilePage />} />
+        <Route path="/cartPage" element={<CartPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

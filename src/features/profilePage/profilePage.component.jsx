@@ -1,7 +1,29 @@
+import { Form, Formik } from 'formik';
+import { TextField } from '@mui/material';
 import Heading from '../../common/heading/heading.component';
 import './profilePage.style.css';
 
 const ProfilePage = () => {
+  const initialProfileValues = {
+    firstName: 'Spomenko',
+    lastName: 'Dukic',
+    phoneNumber: '+385981366068',
+    dateOfBirth: '19.04.1985.',
+    country: 'Croatia',
+    city: 'Zagreb',
+    postalCode: '10000',
+    street: 'Zemunicka 5',
+    building: '2',
+    entrance: '4F',
+    floor: '6th',
+    apartment: '612',
+    comment: '',
+  };
+
+  const handleUpdateProfile = (values) => {
+    console.log(values);
+  };
+
   return (
     <div className="profilePageHolder">
       <div className="shortPersonalInfo">
@@ -17,78 +39,114 @@ const ProfilePage = () => {
       <div className="longPersonalInfo">
         <Heading headingText="Personal info" />
         <hr />
-        <form>
-          <h2>Contact</h2>
-          <div className="namePhoneBirthInfo">
-            <div className="those4AreSame">
-              <label htmlFor="firstName">First Name</label>
-              <input type="text" placeholder="First Name..." />
-            </div>
-            <div className="those4AreSame">
-              <label htmlFor="lastName">Last Name</label>
-              <input type="text" placeholder="Last Name..." />
-            </div>
-            <div className="those4AreSame">
-              <label htmlFor="phoneNumber">Phone Number</label>
-              <input type="number" placeholder="Phone Number..." />
-            </div>
-            <div className="those4AreSame">
-              <label htmlFor="dateOfBirth">Date Of Birth</label>
-              <input type="date" placeholder="Date Of birth..." />
-            </div>
-          </div>
-          <div className="addressInfo">
-            <h2>Address</h2>
-            <div className="countryInfo">
-              <label htmlFor="country">Country</label>
-              <input type="text" placeholder="Your Country..." />
-            </div>
-            <div className="cityAndPostCode">
-              <div className="cityInfo">
-                <label htmlFor="city">City</label>
-                <input type="text" placeholder="Your City..." />
+        <Formik onSubmit={handleUpdateProfile} initialValues={initialProfileValues}>
+          {({ values, handleBlur, handleChange, handleSubmit }) => (
+            <Form onSubmit={handleSubmit}>
+              <h2>Contacts</h2>
+              <div className="namePhoneBirthInfo">
+                <TextField
+                  label="First Name"
+                  name="firstName"
+                  onBlur={handleBlur}
+                  value={values.firstName}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Last Name"
+                  name="lastName"
+                  onBlur={handleBlur}
+                  value={values.lastName}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Phone Number"
+                  name="phoneNumber"
+                  onBlur={handleBlur}
+                  value={values.phoneNumber}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Date Of Birt"
+                  name="dateOfBirth"
+                  onBlur={handleBlur}
+                  value={values.dateOfBirth}
+                  onChange={handleChange}
+                />
               </div>
-              <div className="postalCodeInfo">
-                <label htmlFor="postCode">Postal Code</label>
-                <input type="text" placeholder="Your Postal Code..." />
+              <h2>Address</h2>
+              <div className="namePhoneBirthInfo">
+                <TextField
+                  label="Country"
+                  name="country"
+                  onBlur={handleBlur}
+                  value={values.country}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="City"
+                  name="city"
+                  onBlur={handleBlur}
+                  value={values.city}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Postal Code"
+                  name="postalCode"
+                  onBlur={handleBlur}
+                  value={values.postalCode}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Street"
+                  name="street"
+                  onBlur={handleBlur}
+                  value={values.street}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Building"
+                  name="building"
+                  onBlur={handleBlur}
+                  value={values.building}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Entrance"
+                  name="entrance"
+                  onBlur={handleBlur}
+                  value={values.entrance}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Floor"
+                  name="floor"
+                  onBlur={handleBlur}
+                  value={values.floor}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Apartment"
+                  name="apartment"
+                  onBlur={handleBlur}
+                  value={values.apartment}
+                  onChange={handleChange}
+                />
               </div>
-            </div>
-            <div className="streetInfo">
-              <label htmlFor="street">Street</label>
-              <input type="text" placeholder="Your Street..." />
-            </div>
-            <div className="BuildingEntranceFloorApartment">
-              <div className="those4AreAdditionalInfoOnBuildingEntrance">
-                <label htmlFor="building">Building</label>
-                <input type="text" placeholder="Building..." />
-              </div>
-              <div className="those4AreAdditionalInfoOnBuildingEntrance">
-                <label htmlFor="entrance">Entrance</label>
-                <input type="text" placeholder="Entrance..." />
-              </div>
-              <div className="those4AreAdditionalInfoOnBuildingEntrance">
-                <label htmlFor="floor">Floor</label>
-                <input type="text" placeholder="Floor..." />
-              </div>
-              <div className="those4AreAdditionalInfoOnBuildingEntrance">
-                <label htmlFor="apartment">Apartment</label>
-                <input type="text" placeholder="Apartment..." />
-              </div>
-            </div>
-            <div className="commentInfo">
-              <label htmlFor="comment">Comment</label>
-              <textarea
-                name="subject"
-                placeholder="Additional information: phone number or doorphone code..."
-                id=""
-                cols="40"
-                rows="10"
-              ></textarea>
-            </div>
-          </div>
-        </form>
-        <hr className="bottomBreakLine" />
-        <button className="blueButton">Submit</button>
+              <TextField
+                className="commentInfo"
+                label="Comment"
+                name="comment"
+                onBlur={handleBlur}
+                value={values.comment}
+                onChange={handleChange}
+              />
+              <hr className="bottomBreakLine" />
+              <button className="submitButton" type="submit">
+                Submit
+              </button>
+            </Form>
+          )}
+        </Formik>
       </div>
     </div>
   );

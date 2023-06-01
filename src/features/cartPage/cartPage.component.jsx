@@ -16,68 +16,6 @@ const CartPage = () => {
             <p>SUM</p>
           </div>
           <hr />
-          {/* <Formik
-            onSubmit={handleAddNewProduct} 
-            initialValues={initialAddNewProductValues}
-            validationSchema={addNewProductSchema}
-            >
-                {({
-                    values,
-                    errors,
-                    touched,
-                    handleBlur,
-                    handleChange,
-                    handleSubmit
-                }) => (
-                    <form className='oneProduct' onSubmit={handleSubmit}>
-                        <TextField 
-                        label="product Image"
-                        name='productImage'
-                        onBlur={handleBlur}
-                        value={values.productImage}
-                        error={Boolean(touched.productImage) && Boolean(errors.productImage)}
-                        helperText={touched.productImage && errors.productImage}
-                        onChange={handleChange}
-                        />
-                        <TextField 
-                        label="product Name"
-                        name='productName'
-                        onBlur={handleBlur}
-                        value={values.productName}
-                        error={Boolean(touched.productName) && Boolean(errors.productName)}
-                        helperText={touched.productName && errors.productName}
-                        onChange={handleChange}
-                        />
-                        <TextField 
-                        label="product Description"
-                        name='productDescription'
-                        onBlur={handleBlur}
-                        value={values.productDescription}
-                        error={Boolean(touched.productDescription) && Boolean(errors.productDescription)}
-                        helperText={touched.productDescription && errors.productDescription}
-                        onChange={handleChange}
-                        />
-                        <TextField 
-                        label="product Price"
-                        name='productPrice'
-                        onBlur={handleBlur}
-                        value={values.productPrice}
-                        error={Boolean(touched.productPrice) && Boolean(errors.productPrice)}
-                        helperText={touched.productPrice && errors.productPrice}
-                        onChange={handleChange}
-                        />
-                        <TextField
-                        id="outlined-number"
-                        label="Number"
-                        type="number"
-                        InputLabelProps={{
-                            shrink: true,
-                        }}
-                        />
-                        
-                    </form>
-                )}
-          </Formik> */}
           <div className="oneProduct">
             <div className="oneProductDescribe">
               <img

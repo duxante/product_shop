@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./blogHolder.style.css";
 import Heading from "../../../../common/heading/heading.component";
-import BlogItem from "../../../../common/category/blogItem/blogItem.component";
+import BlogItem from "../../../../common/blogItem/blogItem.component";
 import { Link } from "react-router-dom";
 import allYouNeedToKnowAboutMac from "../../../../assets/allYouNeedToKnowAboutMac.jpeg";
 import mobilePhones from "../../../../assets/mobilePhones.jpeg";

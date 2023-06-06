@@ -1,9 +1,9 @@
 import './blogItem.style.css';
 
-const BlogItem = ({ img, date, blogTitle, blogDescription, handleModal, blogData }) => {
+const BlogItem = ({ image, date, blogTitle, blogDescription, handleModal, blogData }) => {
   return (
     <div className="blogItem" onClick={() => handleModal(blogData)}>
-      <img src={img} />
+      {image}
       <div className="blogItemText">
         <p>{date}</p>
         <h2>{blogTitle}</h2>

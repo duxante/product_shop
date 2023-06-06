@@ -1,0 +1,73 @@
+.productsAndTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.productsHolder{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitlesHolder{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 5px auto;
+}
+
+.subtitlesHolder p{
+    color: gray;
+}
+
+.oneProduct img{
+    max-width: 120px;
+    width: 100%;
+}
+
+.oneProduct{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 5px auto;
+}
+
+.oneProductDescribe{
+    display: flex;
+    align-items: center;
+}
+
+.productName{
+    color: gray;
+}
+
+.totalCostHolder{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalNumbers{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalNumbers p{
+    color: gray;
+}
+
+.discountColor{
+    color: red!important;
+}

@@ -1,0 +1,21 @@
+.paymentHolder{
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.paymentOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    padding: 20px 0;
+    border: 1px solid #d3d0d0;
+    border-radius: 5px;
+    margin: 50px auto!important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+

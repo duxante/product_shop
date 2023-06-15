@@ -8,7 +8,7 @@ import { blog } from '../../data/blog';
 const BlogPage = () => {
   const [modalData, setmodalData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
-  
+
   const handleModal = (blogData) => {
     setmodalData(blogData);
     setIsVisible(true);

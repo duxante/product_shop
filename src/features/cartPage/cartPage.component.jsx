@@ -1,14 +1,17 @@
-import Heading from '../../common/heading/heading.component';
+import { useState } from 'react';
 import './cartPage.style.css';
 import CheckoutDetails from './components/checkoutDetails.component';
 import CheckoutItems from './components/checkoutItems.component';
 
 const CartPage = () => {
+  const [checkoutVisible, setCheckoutVisible] = useState(false);
+  const orderStepsHandle = () => {
+    setCheckoutVisible(true);
+  };
   return (
     <div className="cartPageHolder">
-      <Heading headingText="Cart" />
-      <CheckoutItems />
-      <CheckoutDetails />
+      {!checkoutVisible && <CheckoutItems orderStepsHandle={orderStepsHandle} />}
+      {checkoutVisible && <CheckoutDetails />}
     </div>
   );
 };

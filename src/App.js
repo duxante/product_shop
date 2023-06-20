@@ -14,8 +14,16 @@ import AboutPage from './features/aboutPage/aboutPage.componet';
 import ContactsPage from './features/contactsPage/contactsPage.component';
 import ProfilePage from './features/profilePage/profilePage.component';
 import CartPage from './features/cartPage/cartPage.component';
+import { useState } from 'react';
 
 function App() {
+  const [selectedProducts, setSelectedProducts] = useState([]);
+  console.log(selectedProducts, 'All Selected Products');
+  const handleAddProductToCart = (product) => {
+    console.log(product, 'Single Product');
+    const allProducts = [...selectedProducts, product];
+    setSelectedProducts(allProducts);
+  };
   return (
     <div className="App">
       <Navbar />
@@ -25,11 +33,14 @@ function App() {
         <Route path="/shop" element={<ShopAll />} />
         <Route path="/blogPage" element={<BlogPage />} />
         <Route path="/brandsPage" element={<BrandsPage />} />
-        <Route path="/products" element={<Products />} />
+        <Route
+          path="/products"
+          element={<Products handleAddProductToCart={handleAddProductToCart} />}
+        />
         <Route path="/aboutPage" element={<AboutPage />} />
         <Route path="/contactsPage" element={<ContactsPage />} />
         <Route path="/profilePage" element={<ProfilePage />} />
-        <Route path="/cartPage" element={<CartPage />} />
+        <Route path="/cartPage" element={<CartPage selectedProducts={selectedProducts} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

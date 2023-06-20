@@ -18,13 +18,15 @@
 
 .subtitlesHolder{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 70%;
     margin: 5px auto;
 }
 
 .subtitlesHolder p{
     color: gray;
+    max-width: 350px;
+    width: 100%;
 }
 
 .oneProduct img{
@@ -34,15 +36,17 @@
 
 .oneProduct{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 70%;
     margin: 5px auto;
 }
 
 .oneProductDescribe{
     display: flex;
     align-items: center;
+    max-width: 350px;
+    width: 100%;
 }
 
 .productName{
@@ -70,4 +74,8 @@
 
 .discountColor{
     color: red!important;
+}
+
+.closeIt{
+    margin-left: auto;
 }

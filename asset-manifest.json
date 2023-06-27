@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/product_shop/static/css/main.c353844b.css",
-    "main.js": "/product_shop/static/js/main.a984a7f4.js",
+    "main.js": "/product_shop/static/js/main.eccf5066.js",
     "static/media/garminInstinct.jpg": "/product_shop/static/media/garminInstinct.53e51eb25df403600b35.jpg",
     "static/media/allYouNeedToKnowAboutMac.jpeg": "/product_shop/static/media/allYouNeedToKnowAboutMac.01bebe44f70c4819a31b.jpeg",
     "static/media/razer.jpg": "/product_shop/static/media/razer.09b07352258060823f6f.jpg",
@@ -18,10 +18,10 @@
     "static/media/slick.woff": "/product_shop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/product_shop/index.html",
     "main.c353844b.css.map": "/product_shop/static/css/main.c353844b.css.map",
-    "main.a984a7f4.js.map": "/product_shop/static/js/main.a984a7f4.js.map"
+    "main.eccf5066.js.map": "/product_shop/static/js/main.eccf5066.js.map"
   },
   "entrypoints": [
     "static/css/main.c353844b.css",
-    "static/js/main.a984a7f4.js"
+    "static/js/main.eccf5066.js"
   ]
 }

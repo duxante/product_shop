@@ -4,6 +4,7 @@ import camera from './camera.jpg';
 import ps5 from './ps5.jpg';
 import garminInstinct from './garminInstinct.jpg';
 import razer from './razer.jpg';
+import logo1 from './logo1.png';
 
 const MacImage = () => {
   return <img src={allYouNeedToKnowAboutMac} alt="Mac" />;
@@ -29,4 +30,8 @@ const RazerImage = () => {
   return <img src={razer} alt="Mac" />;
 };
 
-export { MacImage, MobileImage, CameraImage, PlayStationImage, GarminImage, RazerImage };
+const Logo = () => {
+  return <img className="logo" src={logo1} alt="Logo" />;
+};
+
+export { MacImage, MobileImage, CameraImage, PlayStationImage, GarminImage, RazerImage, Logo };

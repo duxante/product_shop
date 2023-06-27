@@ -57,3 +57,20 @@ export const blog = [
     author: 'Spomenko Dukic',
   },
 ];
+
+export const homeBlogPost = [
+  {
+    image: <MacImage />,
+    date: '19.04.2023.',
+    blogTitle: 'All You Need To Know About Mac',
+    blogDescription:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae repellendus nihil, odio suscipit provident neque doloribus maxime odit temporibus inventore et, dolorum blanditiis saepe aliquam delectus. Fuga, assumenda aliquid.',
+  },
+  {
+    image: <MobileImage />,
+    date: '25.04.2023.',
+    blogTitle: 'New iPhone 14 PRO, Worth The Hype?',
+    blogDescription:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae repellendus nihil, odio suscipit provident neque doloribus maxime odit temporibus inventore et, dolorum blanditiis saepe aliquam delectus. Fuga, assumenda aliquid.',
+  },
+];

@@ -37,7 +37,7 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts }) => {
         <div className="totalCostHolder">
           <div className="totalNumbers">
             <p>Subtotal</p>
-            <p>$31,48</p>
+            <p>31.48</p>
           </div>
           <div className="totalNumbers">
             {/* <p>Discount</p>

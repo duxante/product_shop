@@ -10,7 +10,7 @@ const CheckoutProduct = ({ image, category, name, price }) => {
           <p>{name}</p>
         </div>
       </div>
-      <p>${price}</p>
+      <p>{price}</p>
       <p className="closeIt">X</p>
     </div>
   );

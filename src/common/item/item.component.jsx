@@ -7,7 +7,7 @@ const Item = ({ img, category, name, price, imgCart, handleAddProductToCart, pro
       <p className="categoryOfItem">{category}</p>
       <p>{name}</p>
       <div className="priceAndCart">
-        <p>{price}</p>
+        <p>{`${price} $`}</p>
         <img onClick={() => handleAddProductToCart(product)} src={imgCart} />
       </div>
     </div>

@@ -5,6 +5,15 @@ import Heading from '../../../common/heading/heading.component';
 import CheckoutProduct from './checkoutProduct.component';
 
 const CheckoutItems = ({ orderStepsHandle, selectedProducts }) => {
+  /* const totalPrice = (selectedProducts) => {
+    let sum = selectedProducts.reduce((accumulator, product) => {
+      return accumulator + parseFloat(product.price.replace(',', '.'));
+    }, 0);
+
+    return sum;
+  }; */
+  const totalPrice = selectedProducts.reduce((acc, product) => acc + product.price, 0);
+  console.log(totalPrice);
   return (
     <>
       <Heading headingText="Cart" />
@@ -15,8 +24,9 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts }) => {
             <p>PRICE</p>
           </div>
           <hr />
-          {selectedProducts.map((product) => (
+          {selectedProducts.map((product, index) => (
             <CheckoutProduct
+              key={index}
               image={product.img}
               category={product.category}
               price={product.price}
@@ -36,7 +46,7 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts }) => {
           <hr />
           <div className="totalNumbers">
             <p>Total</p>
-            <h3>$3.119,00</h3>
+            <h3>{`${totalPrice.toFixed(2)} $`}</h3>
           </div>
           <button onClick={() => orderStepsHandle()} className="blueButton">
             Checkout

@@ -1,8 +1,8 @@
 import './navbar.style.css';
 import { Link } from 'react-router-dom';
 import { Logo } from '../../assets';
-import cartLogo from '../../assets/cartLogo.png';
-import userIconLogo from '../../assets/userIconLogo.png';
+import { CartLogo } from '../../assets';
+import { UserIcon } from '../../assets';
 
 const Navbar = () => {
   return (
@@ -20,10 +20,10 @@ const Navbar = () => {
         </div>
         <div className="userIconAndCart">
           <Link to="/profilePage">
-            <img src={userIconLogo} alt="user icon" className="userIcon" />
+            <UserIcon />
           </Link>
           <Link to="/cartPage">
-            <img src={cartLogo} alt="shopping cart" className="shoppingcart" />
+            <CartLogo />
           </Link>
         </div>
       </div>

@@ -4,17 +4,14 @@ import phoneCall from '../../assets/phoneCall.png';
 import mailUs from '../../assets/mailUs.png';
 import location from '../../assets/location.png';
 import workingHours from '../../assets/workingHours.png';
+import { ContactPageLaptopImage } from '../../assets';
 
 const ContactsPage = () => {
   return (
     <>
       <Heading headingText="Contacts" />
       <div className="contactsPageHolder">
-        <img
-          className="mainImage"
-          src="https://cdn.mos.cms.futurecdn.net/MsG53PJxNQu3N9gXxLpG43.jpg"
-          alt=""
-        />
+        <ContactPageLaptopImage />
         <div className="storeAndFeedbackHolder">
           <div className="store">
             <h3>Store</h3>

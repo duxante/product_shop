@@ -1,3 +1,11 @@
+import {
+  CarrolIssa,
+  GeorgiaClanton,
+  MartinaCade,
+  NicolaSmith,
+  PatriciaKirk,
+  TammyBrun,
+} from '../../assets';
 import Heading from '../../common/heading/heading.component';
 import './aboutPage.style.css';
 
@@ -76,60 +84,42 @@ const AboutPage = () => {
           <h2>Our team</h2>
           <div className="ourTeamHolder">
             <div className="oneTeamMember">
-              <img
-                src="https://welivedhappilyeverafter.com/wp-content/uploads/2017/06/Profile-Pic-square.png"
-                alt=""
-              />
+              <TammyBrun />
               <div className="oneTeamMemberData">
                 <p className="teamName">Tammy Brun</p>
                 <p className="teamPosition">Co-Founder & CEO</p>
               </div>
             </div>
             <div className="oneTeamMember">
-              <img
-                src="https://i.guim.co.uk/img/media/089ea4d38a15736f7960e679822578d02504438b/0_121_2362_1418/master/2362.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=fd428e3434abd9d50190c711c5bb7024"
-                alt=""
-              />
+              <GeorgiaClanton />
               <div className="oneTeamMemberData">
                 <p className="teamName">Georgia Clanton</p>
                 <p className="teamPosition">Co-Founder & Pressident</p>
               </div>
             </div>
             <div className="oneTeamMember">
-              <img
-                src="https://threema.ch/images/profile_picture/profile_picture_before.jpg"
-                alt=""
-              />
+              <MartinaCade />
               <div className="oneTeamMemberData">
                 <p className="teamName">Martina Cade</p>
                 <p className="teamPosition">Co-Founder & CTO</p>
               </div>
             </div>
             <div className="oneTeamMember">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0256/6452/0270/products/A94BE016-32BB-45B9-B083-336E8BED53A6_400x.jpg"
-                alt=""
-              />
+              <CarrolIssa />
               <div className="oneTeamMemberData">
                 <p className="teamName">Carrol Issa</p>
                 <p className="teamPosition">Formal Commercial Director</p>
               </div>
             </div>
             <div className="oneTeamMember">
-              <img
-                src="https://i.pinimg.com/originals/93/8b/ac/938bac3a9a7f612ced6fbfa594159638.png"
-                alt=""
-              />
+              <PatriciaKirk />
               <div className="oneTeamMemberData">
                 <p className="teamName">Patricia Kirk</p>
                 <p className="teamPosition">Formal Director Of Strategy</p>
               </div>
             </div>
             <div className="oneTeamMember">
-              <img
-                src="https://static.news.bitcoin.com/wp-content/uploads/2018/02/PewDiePie-brofist.jpg"
-                alt=""
-              />
+              <NicolaSmith />
               <div className="oneTeamMemberData">
                 <p className="teamName">Nicola Smith</p>
                 <p className="teamPosition">Product Manager</p>

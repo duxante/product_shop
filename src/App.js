@@ -24,9 +24,14 @@ function App() {
     const allProducts = [...selectedProducts, product];
     setSelectedProducts(allProducts);
   };
+  const removeProductFromCart = (productId) => {
+    let updatedProducts = selectedProducts.filter((product) => product.id !== productId);
+    setSelectedProducts(updatedProducts);
+    console.log(productId, 'product Id');
+  };
   return (
     <div className="App">
-      <Navbar />
+      <Navbar selectedProducts={selectedProducts} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<CategoriesPage />} />
@@ -40,7 +45,15 @@ function App() {
         <Route path="/aboutPage" element={<AboutPage />} />
         <Route path="/contactsPage" element={<ContactsPage />} />
         <Route path="/profilePage" element={<ProfilePage />} />
-        <Route path="/cartPage" element={<CartPage selectedProducts={selectedProducts} />} />
+        <Route
+          path="/cartPage"
+          element={
+            <CartPage
+              removeProductFromCart={removeProductFromCart}
+              selectedProducts={selectedProducts}
+            />
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

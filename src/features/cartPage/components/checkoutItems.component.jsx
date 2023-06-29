@@ -4,7 +4,7 @@ import { TextField, colors } from '@mui/material';
 import Heading from '../../../common/heading/heading.component';
 import CheckoutProduct from './checkoutProduct.component';
 
-const CheckoutItems = ({ orderStepsHandle, selectedProducts }) => {
+const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCart }) => {
   /* const totalPrice = (selectedProducts) => {
     let sum = selectedProducts.reduce((accumulator, product) => {
       return accumulator + parseFloat(product.price.replace(',', '.'));
@@ -24,8 +24,13 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts }) => {
             <p>PRICE</p>
           </div>
           <hr />
+          {!selectedProducts.length && (
+            <p className="noItemsInCart">There is no any items in the cart!</p>
+          )}
           {selectedProducts.map((product, index) => (
             <CheckoutProduct
+              productId={product.id}
+              removeProductFromCart={removeProductFromCart}
               key={index}
               image={product.img}
               category={product.category}

@@ -1,6 +1,6 @@
 import './style/checkoutItems.style.css';
 
-const CheckoutProduct = ({ image, category, name, price }) => {
+const CheckoutProduct = ({ image, category, name, price, removeProductFromCart, productId }) => {
   return (
     <div className="oneProduct">
       <div className="oneProductDescribe">
@@ -11,7 +11,9 @@ const CheckoutProduct = ({ image, category, name, price }) => {
         </div>
       </div>
       <p>{price}</p>
-      <p className="closeIt">X</p>
+      <p onClick={() => removeProductFromCart(productId)} className="closeIt">
+        X
+      </p>
     </div>
   );
 };

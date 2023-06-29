@@ -4,7 +4,7 @@ import { Logo } from '../../assets';
 import { CartLogo } from '../../assets';
 import { UserIcon } from '../../assets';
 
-const Navbar = () => {
+const Navbar = ({ selectedProducts }) => {
   return (
     <div className="navbarHolder">
       <div className="navigation">
@@ -22,8 +22,9 @@ const Navbar = () => {
           <Link to="/profilePage">
             <UserIcon />
           </Link>
-          <Link to="/cartPage">
+          <Link className="itemsNumber" to="/cartPage">
             <CartLogo />
+            <span>{selectedProducts.length}</span>
           </Link>
         </div>
       </div>

@@ -3,7 +3,7 @@ import './cartPage.style.css';
 import CheckoutDetails from './components/checkoutDetails.component';
 import CheckoutItems from './components/checkoutItems.component';
 
-const CartPage = ({ selectedProducts }) => {
+const CartPage = ({ selectedProducts, removeProductFromCart }) => {
   console.log(selectedProducts, 'Cart Page Products');
   const [checkoutVisible, setCheckoutVisible] = useState(false);
   const orderStepsHandle = () => {
@@ -12,7 +12,11 @@ const CartPage = ({ selectedProducts }) => {
   return (
     <div className="cartPageHolder">
       {!checkoutVisible && (
-        <CheckoutItems selectedProducts={selectedProducts} orderStepsHandle={orderStepsHandle} />
+        <CheckoutItems
+          removeProductFromCart={removeProductFromCart}
+          selectedProducts={selectedProducts}
+          orderStepsHandle={orderStepsHandle}
+        />
       )}
       {checkoutVisible && <CheckoutDetails />}
     </div>

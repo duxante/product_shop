@@ -5,8 +5,19 @@ import mailUs from '../../assets/mailUs.png';
 import location from '../../assets/location.png';
 import workingHours from '../../assets/workingHours.png';
 import { ContactPageLaptopImage } from '../../assets';
+import { Form, Formik, Field } from 'formik';
+import { TextField, MenuItem } from '@mui/material';
 
 const ContactsPage = () => {
+  const initialContactFormValues = {
+    name: '',
+    email: '',
+    topic: 'Choose Option',
+    message: '',
+  };
+  const handleContactFormInquiry = (values) => {
+    console.log(values);
+  };
   return (
     <>
       <Heading headingText="Contacts" />
@@ -50,7 +61,58 @@ const ContactsPage = () => {
         </div>
         <div className="contactUsFormHolder">
           <h2>Contact Us</h2>
-          <form className="justForm">
+          <Formik onSubmit={handleContactFormInquiry} initialValues={initialContactFormValues}>
+            {({ values, handleBlur, handleChange, handleSubmit }) => (
+              <Form className="justFormParent" onSubmit={handleSubmit}>
+                <div className="justForm">
+                  <TextField
+                    label="Name"
+                    name="name"
+                    onBlur={handleBlur}
+                    value={values.name}
+                    onChange={handleChange}
+                    placeholder="Your Name..."
+                  />
+                  <TextField
+                    label="Email"
+                    name="email"
+                    onBlur={handleBlur}
+                    value={values.email}
+                    onChange={handleChange}
+                    placeholder="Your Email..."
+                  />
+                  <Field
+                    name="topic"
+                    as={TextField}
+                    onBlur={handleBlur}
+                    value={values.email}
+                    onChange={handleChange}
+                    select
+                    placeholder="Choose Option..."
+                    label="Choose Topic"
+                    variant="outlined"
+                  >
+                    <MenuItem value="E-Commerce Support">E-Commerce Support</MenuItem>
+                    <MenuItem value="Online Orders">Online Orders</MenuItem>
+                    <MenuItem value="Sales&Marketing">Sales & Marketing</MenuItem>
+                    <MenuItem value="Cult of E-Commerce">Cult of E-Commerce</MenuItem>
+                  </Field>
+                  <TextField
+                    label="Message"
+                    name="message"
+                    onBlur={handleBlur}
+                    value={values.message}
+                    onChange={handleChange}
+                    placeholder="Write Message..."
+                  />
+                </div>
+                <button type="submit" className="blueButton">
+                  Submit
+                </button>
+              </Form>
+            )}
+          </Formik>
+          {/* <form className="justForm">
             <label htmlFor="name">Name</label>
             <input type="text" placeholder="Your Name..." />
             <label htmlFor="email">Email</label>
@@ -71,8 +133,7 @@ const ContactsPage = () => {
               cols="40"
               rows="10"
             ></textarea>
-          </form>
-          <button className="blueButton">Submit</button>
+          </form> */}
         </div>
       </div>
     </>

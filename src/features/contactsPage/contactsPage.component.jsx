@@ -1,4 +1,5 @@
 import Heading from '../../common/heading/heading.component';
+import { useState } from 'react';
 import './contactsPage.style.css';
 import phoneCall from '../../assets/phoneCall.png';
 import mailUs from '../../assets/mailUs.png';
@@ -7,8 +8,14 @@ import workingHours from '../../assets/workingHours.png';
 import { ContactPageLaptopImage } from '../../assets';
 import { Form, Formik, Field } from 'formik';
 import { TextField, MenuItem } from '@mui/material';
+import Notification from '../../common/notification/notification.component';
 
 const ContactsPage = () => {
+  const [notificationConfig, setNotificationConfig] = useState({
+    text: '',
+    severity: '',
+    visible: false,
+  });
   const initialContactFormValues = {
     name: '',
     email: '',
@@ -17,10 +24,22 @@ const ContactsPage = () => {
   };
   const handleContactFormInquiry = (values, actions) => {
     console.log(values);
+    setNotificationConfig({
+      text: `${values.name} successfully sent message!`,
+      severity: 'success',
+      visible: true,
+    });
     actions.resetForm();
   };
+
   return (
     <>
+      {notificationConfig.visible && (
+        <Notification
+          notificationConfig={notificationConfig}
+          setNotificationConfig={setNotificationConfig}
+        />
+      )}
       <Heading headingText="Contacts" />
       <div className="contactsPageHolder">
         <ContactPageLaptopImage />

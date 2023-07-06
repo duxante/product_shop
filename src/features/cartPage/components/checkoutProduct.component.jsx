@@ -11,7 +11,7 @@ const CheckoutProduct = ({ image, category, name, price, removeProductFromCart, 
         </div>
       </div>
       <p>{price}</p>
-      <p onClick={() => removeProductFromCart(productId)} className="closeIt">
+      <p onClick={() => removeProductFromCart(productId, name)} className="closeIt">
         X
       </p>
     </div>

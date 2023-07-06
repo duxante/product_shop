@@ -12,11 +12,12 @@ const ContactsPage = () => {
   const initialContactFormValues = {
     name: '',
     email: '',
-    topic: 'Choose Option',
+    topic: '',
     message: '',
   };
-  const handleContactFormInquiry = (values) => {
+  const handleContactFormInquiry = (values, actions) => {
     console.log(values);
+    actions.resetForm();
   };
   return (
     <>
@@ -85,12 +86,12 @@ const ContactsPage = () => {
                     name="topic"
                     as={TextField}
                     onBlur={handleBlur}
-                    value={values.email}
+                    value={values.topic}
                     onChange={handleChange}
-                    select
                     placeholder="Choose Option..."
                     label="Choose Topic"
                     variant="outlined"
+                    select
                   >
                     <MenuItem value="E-Commerce Support">E-Commerce Support</MenuItem>
                     <MenuItem value="Online Orders">Online Orders</MenuItem>

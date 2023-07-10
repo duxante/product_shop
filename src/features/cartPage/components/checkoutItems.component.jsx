@@ -13,7 +13,6 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCa
     return sum;
   }; */
   const totalPrice = selectedProducts.reduce((acc, product) => acc + product.price, 0);
-  console.log(totalPrice);
   return (
     <>
       <Heading headingText="Cart" />

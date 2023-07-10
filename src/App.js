@@ -24,7 +24,7 @@ function App() {
     severity: '',
     visible: false,
   });
-  console.log(selectedProducts, 'All Selected Products');
+
   const handleAddProductToCart = (product) => {
     const productExist = selectedProducts.some((oneProduct) => oneProduct.id === product.id);
     if (productExist) {
@@ -42,12 +42,11 @@ function App() {
         visible: true,
       });
     }
-    console.log(product, 'Single Product');
   };
   const removeProductFromCart = (productId, name) => {
     let updatedProducts = selectedProducts.filter((product) => product.id !== productId);
     setSelectedProducts(updatedProducts);
-    console.log(productId, 'product Id');
+
     setNotificationConfig({
       text: `${name} is successfully removed from the cart!`,
       severity: 'success',

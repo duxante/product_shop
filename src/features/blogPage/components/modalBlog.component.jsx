@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
 const ModalBlog = ({ modalData, isVisible, handleCloseModal }) => {
-  console.log(modalData);
+  console.log(modalData.image);
   return (
     <div>
       <Modal
@@ -18,7 +18,8 @@ const ModalBlog = ({ modalData, isVisible, handleCloseModal }) => {
             <p className="closeModal" onClick={handleCloseModal}>
               X
             </p>
-            <img className="modalImage" src={modalData.img} />
+            <div className="modalImage">{modalData.image}</div>
+
             <div className="authorAndDate">
               <p>Datum: {modalData.date}</p>
               <p>Autor: {modalData.author}</p>

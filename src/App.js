@@ -53,6 +53,10 @@ function App() {
       visible: true,
     });
   };
+
+  const clearCart = () => {
+    setSelectedProducts([]);
+  };
   return (
     <>
       {notificationConfig.visible && (
@@ -64,7 +68,7 @@ function App() {
       <div className="App">
         <Navbar selectedProducts={selectedProducts} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home handleAddProductToCart={handleAddProductToCart} />} />
           <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/shop" element={<ShopAll />} />
           <Route path="/blogPage" element={<BlogPage />} />
@@ -81,6 +85,7 @@ function App() {
             element={
               <CartPage
                 removeProductFromCart={removeProductFromCart}
+                clearCart={clearCart}
                 selectedProducts={selectedProducts}
               />
             }

@@ -23,7 +23,6 @@ const ContactsPage = () => {
     message: '',
   };
   const handleContactFormInquiry = (values, actions) => {
-    console.log(values);
     setNotificationConfig({
       text: `${values.name} successfully sent message!`,
       severity: 'success',

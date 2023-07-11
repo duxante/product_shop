@@ -33,7 +33,6 @@ const CheckoutDetails = () => {
   };
 
   const handleUpdateCheckoutDetails = (values, actions) => {
-    console.log(values);
     setNotificationConfig({
       text: 'Item successfully ordered!',
       severity: 'success',

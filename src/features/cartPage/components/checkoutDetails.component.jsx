@@ -7,7 +7,7 @@ import Heading from '../../../common/heading/heading.component';
 import Notification from '../../../common/notification/notification.component';
 import { useNavigate } from 'react-router-dom';
 
-const CheckoutDetails = () => {
+const CheckoutDetails = ({ clearCart }) => {
   const navigate = useNavigate();
   const [notificationConfig, setNotificationConfig] = useState({
     text: '',
@@ -39,6 +39,7 @@ const CheckoutDetails = () => {
       visible: true,
     });
     actions.resetForm();
+    clearCart();
     setTimeout(() => {
       navigate('/');
     }, 3000);

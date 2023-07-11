@@ -4,13 +4,15 @@ import { trendingItems } from '../../../../data/products';
 import './trendingBar.style.css';
 import Heading from '../../../../common/heading/heading.component';
 
-const TrendingBar = () => {
+const TrendingBar = ({ handleAddProductToCart }) => {
   return (
     <div className="trendingbarHolder">
       <Heading headingText="trending items" />
       <div className="trendingBarNavigation">
         {trendingItems.map((oneItem, index) => (
           <Item
+            product={oneItem}
+            handleAddProductToCart={handleAddProductToCart}
             key={index}
             img={oneItem.img}
             category={oneItem.category}

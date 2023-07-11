@@ -5,12 +5,12 @@ import TrendingBar from './components/trendingBar/trendingBar.component';
 import PopularBrands from './components/popularBrands/popularBrands.component';
 import Blog from './components/blogHome/blogHolder.component';
 
-const Home = () => {
+const Home = ({ handleAddProductToCart }) => {
   return (
     <div>
       <HomeSlider />
       <CategoriesBar />
-      <TrendingBar />
+      <TrendingBar handleAddProductToCart={handleAddProductToCart} />
       <PopularBrands />
       <Blog />
     </div>

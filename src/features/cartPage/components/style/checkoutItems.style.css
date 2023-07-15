@@ -67,6 +67,7 @@
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
+    color: grey;
 }
 
 .totalNumbers p{

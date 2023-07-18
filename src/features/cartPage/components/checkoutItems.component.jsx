@@ -1,18 +1,19 @@
 import './style/checkoutItems.style.css';
-import { Formik } from 'formik';
-import { TextField, colors } from '@mui/material';
+import { Form, Formik } from 'formik';
+import { TextField } from '@mui/material';
 import Heading from '../../../common/heading/heading.component';
 import CheckoutProduct from './checkoutProduct.component';
+import { useState } from 'react';
+import Notification from '../../../common/notification/notification.component';
 
 const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCart }) => {
-  /* const totalPrice = (selectedProducts) => {
-    let sum = selectedProducts.reduce((accumulator, product) => {
-      return accumulator + parseFloat(product.price.replace(',', '.'));
-    }, 0);
+  const [discount, setDiscount] = useState('');
 
-    return sum;
-  }; */
+  const handleChange = (event) => {
+    setDiscount(parseFloat(event.target.value));
+  };
   const totalPrice = selectedProducts.reduce((acc, product) => acc + product.price, 0);
+  const totalPriceAfterDiscount = totalPrice - (totalPrice * discount) / 100;
   return (
     <>
       <Heading headingText="Cart" />
@@ -41,16 +42,27 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCa
         <div className="totalCostHolder">
           <div className="totalNumbers">
             <p>Subtotal</p>
-            <p>31.48</p>
+            <p>{`${totalPrice.toFixed(2)} $`}</p>
           </div>
-          <div className="totalNumbers">
-            {/* <p>Discount</p>
-            <p className="discountColor">$-29,00</p> */}
-          </div>
+          <Formik>
+            {({ handleBlur, handleSubmit }) => (
+              <Form className="totalNumbers" onSubmit={handleSubmit}>
+                <TextField
+                  name="discount"
+                  label="Discount"
+                  placeholder="Enter your discount"
+                  className="discountColor"
+                  onBlur={handleBlur}
+                  value={discount}
+                  onChange={handleChange}
+                />
+              </Form>
+            )}
+          </Formik>
           <hr />
           <div className="totalNumbers">
             <p>Total</p>
-            <h3>{`${totalPrice.toFixed(2)} $`}</h3>
+            <h3>{`${totalPriceAfterDiscount.toFixed(2)} $`}</h3>
           </div>
           <button onClick={() => orderStepsHandle()} className="blueButton">
             Checkout

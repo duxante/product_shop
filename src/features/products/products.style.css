@@ -6,6 +6,7 @@
     flex-direction: column;
     width: 100%;
     margin: 0px auto;
+    margin-bottom: auto;
 }
 
 .productsPageNavigation {
@@ -19,4 +20,12 @@
     flex-wrap: wrap;
     align-content: flex-end;
     gap: 15px;
+}
+
+.buttonsForCategories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
 }

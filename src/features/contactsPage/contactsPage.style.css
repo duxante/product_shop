@@ -121,6 +121,12 @@
     width: 100%;
 }
 
+.blueButton:disabled{
+    background-color: gray;
+    color: black;
+    pointer-events: none;
+}
+
 .blueButton:hover {
     color: #fff;
     background-color: #0d6efd;

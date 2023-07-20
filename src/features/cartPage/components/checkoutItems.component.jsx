@@ -4,15 +4,23 @@ import { TextField } from '@mui/material';
 import Heading from '../../../common/heading/heading.component';
 import CheckoutProduct from './checkoutProduct.component';
 import { useState } from 'react';
+import { coupons } from '../../../data/coupons';
 
 const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCart }) => {
-  const [discount, setDiscount] = useState(0);
-
-  const handleChange = (event) => {
-    setDiscount(Number(event.target.value));
-  };
+  const [totalPriceAfterDiscount, setTotalPriceAfterDiscount] = useState(0);
   const totalPrice = selectedProducts.reduce((acc, product) => acc + product.price, 0);
-  const totalPriceAfterDiscount = totalPrice - (totalPrice * discount) / 100;
+  const initialValues = {
+    discount: '',
+  };
+  const handleSearchCoupon = (values) => {
+    let coupon = coupons.find((coupon) => coupon.name === values.discount);
+    if (coupon) {
+      let discountedPrice = totalPrice - totalPrice * coupon.discount;
+      setTotalPriceAfterDiscount(discountedPrice);
+    }
+    console.log(coupon);
+  };
+
   return (
     <>
       <Heading headingText="Cart" />
@@ -43,8 +51,8 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCa
             <p>Subtotal</p>
             <p>{`${totalPrice.toFixed(2)} $`}</p>
           </div>
-          <Formik>
-            {({ handleBlur, handleSubmit }) => (
+          <Formik initialValues={initialValues} onSubmit={handleSearchCoupon}>
+            {({ handleBlur, handleChange, handleSubmit, values }) => (
               <Form className="totalNumbers" onSubmit={handleSubmit}>
                 <TextField
                   name="discount"
@@ -54,14 +62,22 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCa
                   onBlur={handleBlur}
                   onChange={handleChange}
                   disabled={!selectedProducts.length}
+                  value={values.discount}
                 />
+                <button className="blueButtonApply" type="submit">
+                  Apply
+                </button>
               </Form>
             )}
           </Formik>
           <hr />
           <div className="totalNumbers">
             <p>Total</p>
-            <h3>{`${totalPriceAfterDiscount.toFixed(2)} $`}</h3>
+            <h3>
+              {!totalPriceAfterDiscount
+                ? `${totalPrice.toFixed(2)} $`
+                : `${totalPriceAfterDiscount.toFixed(2)} $`}
+            </h3>
           </div>
           <button
             disabled={!selectedProducts.length}

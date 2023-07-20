@@ -38,8 +38,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 70%;
+    width: 75%;
     margin: 5px auto;
+    gap: 20px;
 }
 
 .oneProductDescribe{
@@ -47,6 +48,7 @@
     align-items: center;
     max-width: 350px;
     width: 100%;
+    gap: 10px;
 }
 
 .productName{
@@ -59,7 +61,7 @@
     width: 25%;
     display: flex;
     flex-direction: column;
-    max-height: 250px;
+    height: 100%;
 }
 
 .totalNumbers{
@@ -90,4 +92,31 @@
     width: 100%;
     font-weight: bold;
     color: gray;
+}
+
+.blueButtonApply {
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-right: 0;
+    margin-top: 5px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.itemPrice{
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
 }

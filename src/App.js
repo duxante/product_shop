@@ -14,6 +14,7 @@ import AboutPage from './features/aboutPage/aboutPage.componet';
 import ContactsPage from './features/contactsPage/contactsPage.component';
 import ProfilePage from './features/profilePage/profilePage.component';
 import CartPage from './features/cartPage/cartPage.component';
+import Practice from './practice/practice.component';
 import { useState } from 'react';
 import Notification from './common/notification/notification.component';
 
@@ -90,6 +91,7 @@ function App() {
               />
             }
           />
+          <Route path="/practice" element={<Practice />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

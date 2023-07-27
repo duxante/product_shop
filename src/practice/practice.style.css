@@ -1,0 +1,34 @@
+.zelena{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.crvena{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.someTextForPractice{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    margin: 0px auto;
+    height: 150px;
+    color: black;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.someText{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+

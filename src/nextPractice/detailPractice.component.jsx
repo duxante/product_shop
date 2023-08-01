@@ -1,11 +1,14 @@
 import React from 'react';
 
-const DetailPractice = ({ firstName, lastName, formData }) => {
+const DetailPractice = ({ formData }) => {
   return (
     <div>
       <h2>Details:</h2>
-      <p>First Name: {formData.firstName}</p>
-      <p>Last Name: {formData.lastName}</p>
+      {formData.map((data, index) => (
+        <p key={index}>
+          Korisnik {index + 1}: {data.firstName + ` ` + data.lastName}
+        </p>
+      ))}
     </div>
   );
 };

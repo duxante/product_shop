@@ -14,15 +14,7 @@ const MainPractice = () => {
   return (
     <div>
       <FormPractice handleFormSubmit={handleFormSubmit} />
-
-      {formDetails.map((formData, index) => (
-        <DetailPractice
-          key={index}
-          formData={formData}
-          /* firstName={formData.firstName}
-          lastName={formData.lastName} */
-        />
-      ))}
+      <DetailPractice formData={formDetails} />
     </div>
   );
 };

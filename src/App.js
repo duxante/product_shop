@@ -17,6 +17,7 @@ import CartPage from './features/cartPage/cartPage.component';
 import Practice from './practice/practice.component';
 import { useState } from 'react';
 import Notification from './common/notification/notification.component';
+import MainPractice from './nextPractice/mainPractice.component';
 
 function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -91,6 +92,7 @@ function App() {
               />
             }
           />
+          <Route path="/nextPractice" element={<MainPractice />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

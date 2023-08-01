@@ -2,9 +2,13 @@ import { Formik, Form } from 'formik';
 import { TextField } from '@mui/material';
 import { useState } from 'react';
 import './practice.style.css';
+import Comp1 from './comp1.component';
+import Comp2 from './comp2.component';
 
 const Practice = () => {
-  const [isParagraphVisible, setIsParagraphVisible] = useState(false);
+  const [isCompVisible, setIsCompVisible] = useState(false);
+  console.log(isCompVisible);
+  /* const [isParagraphVisible, setIsParagraphVisible] = useState(false);
   const [result, setResult] = useState(null);
   const initialMultiplyValues = {
     number1: '',
@@ -15,10 +19,18 @@ const Practice = () => {
     let multiplicationResult = values.number1 * values.number2;
     setResult(multiplicationResult);
     actions.resetForm();
+  }; */
+
+  const handleCompVisible = (arg) => {
+    setIsCompVisible(arg);
   };
+
   return (
     <>
-      <div className="someTextForPractice">
+      <Comp1 handleCompVisible={handleCompVisible} />
+
+      <Comp2 isCompVisible={isCompVisible} />
+      {/* <div className="someTextForPractice">
         {isParagraphVisible && (
           <p className="someText">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, veniam
@@ -31,6 +43,16 @@ const Practice = () => {
         </button>
         <button className="blueButton" onClick={() => setIsParagraphVisible(false)}>
           Hide
+        </button>
+        <button
+          onClick={() => {
+            !isParagraphVisible ? setIsParagraphVisible(true) : setIsParagraphVisible(false);
+          }}
+        >
+          Show/Hide
+        </button>
+        <button onClick={() => setIsParagraphVisible(!isParagraphVisible)}>
+          {isParagraphVisible ? 'Hide' : 'Show'}
         </button>
       </div>
       <span className={result != null ? 'zelena' : 'crvena'}></span>
@@ -62,7 +84,7 @@ const Practice = () => {
             <p>Result: {result}</p>
           </Form>
         )}
-      </Formik>
+      </Formik> */}
     </>
   );
 };

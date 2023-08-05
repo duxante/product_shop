@@ -11,10 +11,15 @@ const MainPractice = () => {
     actions.resetForm();
   };
 
+  const handleRemoveUser = (userName) => {
+    let updatedUsers = formDetails.filter((oneObject) => oneObject.firstName !== userName);
+    setFormDetails(updatedUsers);
+  };
+
   return (
     <div>
       <FormPractice handleFormSubmit={handleFormSubmit} />
-      <DetailPractice formData={formDetails} />
+      <DetailPractice formData={formDetails} handleRemoveUser={handleRemoveUser} />
     </div>
   );
 };

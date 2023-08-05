@@ -18,6 +18,7 @@ import Practice from './practice/practice.component';
 import { useState } from 'react';
 import Notification from './common/notification/notification.component';
 import MainPractice from './nextPractice/mainPractice.component';
+import Users from './03082023Practice/users.component';
 
 function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -94,6 +95,7 @@ function App() {
           />
           <Route path="/nextPractice" element={<MainPractice />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/users" element={<Users />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

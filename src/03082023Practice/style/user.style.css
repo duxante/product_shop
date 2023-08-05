@@ -1,0 +1,37 @@
+.userHolder{
+    margin: 0px auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 3px 7px 0px;
+}
+
+.userHolder img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+.dataHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+.dataHolder p{
+    margin: 2px;
+}
+
+.removeUserbyId{
+    display:flex;
+    justify-content: flex-end; 
+    cursor: pointer;
+    color: red;
+}
+
+

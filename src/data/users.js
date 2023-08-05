@@ -1,0 +1,42 @@
+export const users = [
+  {
+    id: 1,
+    firstName: 'Spomenko',
+    lastName: 'Dukic',
+    email: 'spomenko.dukic@gmail.com',
+    phoneNumber: '+385981366068',
+    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152843.jpg',
+  },
+  {
+    id: 2,
+    firstName: 'Milorad',
+    lastName: 'Smiljanic',
+    email: 'milorad.smiljanic@gmail.com',
+    phoneNumber: '+385981366896',
+    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152585.jpg',
+  },
+  {
+    id: 3,
+    firstName: 'Marko',
+    lastName: 'Markovic',
+    email: 'marko.markovic@gmail.com',
+    phoneNumber: '+3859813668452',
+    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152391.jpg',
+  },
+  {
+    id: 4,
+    firstName: 'Ivan',
+    lastName: 'Ivanovic',
+    email: 'ivan.ivanovic@gmail.com',
+    phoneNumber: '+3859813668772',
+    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152844.jpg',
+  },
+  {
+    id: 5,
+    firstName: 'Zeljko',
+    lastName: 'Zeljkic',
+    email: 'zeljko.zeljkic@gmail.com',
+    phoneNumber: '+3859813668666',
+    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152686.jpg',
+  },
+];

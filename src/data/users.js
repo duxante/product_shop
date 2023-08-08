@@ -5,7 +5,8 @@ export const users = [
     lastName: 'Dukic',
     email: 'spomenko.dukic@gmail.com',
     phoneNumber: '+385981366068',
-    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152843.jpg',
+    profileImage:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQCyqyEm35wn62Yoo8ycAo8TcWKPv7U1aBSstYTVs24CMoRIef5CcBFwSXs9wNvMyFtQ&usqp=CAU',
   },
   {
     id: 2,
@@ -13,7 +14,7 @@ export const users = [
     lastName: 'Smiljanic',
     email: 'milorad.smiljanic@gmail.com',
     phoneNumber: '+385981366896',
-    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152585.jpg',
+    profileImage: 'https://avatarfiles.alphacoders.com/152/thumb-152684.jpg',
   },
   {
     id: 3,

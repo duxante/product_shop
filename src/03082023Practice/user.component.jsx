@@ -8,12 +8,16 @@ const User = ({
   profileImage,
   handleRemoveUserById,
   id,
+  setDialogConfig,
 }) => {
   return (
     <div className="userHolder">
       <img src={profileImage} />
       <div className="dataHolder">
-        <span className="removeUserbyId" onClick={() => handleRemoveUserById(id)}>
+        <span
+          className="removeUserbyId"
+          onClick={() => setDialogConfig({ isOpen: true, userId: id })}
+        >
           Remove user
         </span>
         <p>

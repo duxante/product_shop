@@ -7,9 +7,9 @@ import {
   TammyBrun,
 } from '../../assets';
 import Heading from '../../common/heading/heading.component';
-import './aboutPage.style.css';
+import './about.style.css';
 
-const AboutPage = () => {
+const About = () => {
   return (
     <>
       <Heading headingText="About" />
@@ -166,4 +166,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;

@@ -1,7 +1,7 @@
 import { Form, Formik } from 'formik';
 import { TextField } from '@mui/material';
 import Heading from '../../common/heading/heading.component';
-import './profilePage.style.css';
+import './profile.style.css';
 
 const ProfilePage = () => {
   const initialProfileValues = {

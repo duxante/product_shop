@@ -1,11 +1,11 @@
-import './blogPage.style.css';
+import './blog.style.css';
 import Heading from '../../common/heading/heading.component';
 import { useState } from 'react';
 import BlogItem from '../../common/blogItem/blogItem.component';
 import ModalBlog from './components/modalBlog.component';
 import { blog } from '../../data/blog';
 
-const BlogPage = () => {
+const Blog = () => {
   const [modalData, setmodalData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -47,4 +47,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default Blog;

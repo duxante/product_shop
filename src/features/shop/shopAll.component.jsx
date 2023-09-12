@@ -1,11 +1,11 @@
-import "./shopAll.style.css";
+import './shopAll.style.css';
 
 const ShopAll = () => {
-    return(
-        <>
-        <p>IN PROGRESS</p>
-        </>
-    )
-}
+  return (
+    <>
+      <p>IN PROGRESS</p>
+    </>
+  );
+};
 
 export default ShopAll;

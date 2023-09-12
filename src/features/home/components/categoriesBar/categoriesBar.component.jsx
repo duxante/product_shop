@@ -1,7 +1,7 @@
-import './categoriesBar.style.css';
-import { categories } from '../../../../data/categories';
 import { Link } from 'react-router-dom';
+import { categories } from '../../../../data/categories';
 import OneCategory from '../../../../common/category/oneCategory.component';
+import './categoriesBar.style.css';
 
 const CategoriesBar = () => {
   return (

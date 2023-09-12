@@ -1,9 +1,9 @@
-import './home.style.css';
 import HomeSlider from './components/slider/slider.component';
 import CategoriesBar from './components/categoriesBar/categoriesBar.component';
 import TrendingBar from './components/trendingBar/trendingBar.component';
 import PopularBrands from './components/popularBrands/popularBrands.component';
 import Blog from './components/blogHome/blogHolder.component';
+import './home.style.css';
 
 const Home = ({ handleAddProductToCart }) => {
   return (

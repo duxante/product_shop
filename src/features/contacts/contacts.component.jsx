@@ -1,16 +1,16 @@
-import Heading from '../../common/heading/heading.component';
 import { useState } from 'react';
-import './contactsPage.style.css';
+import { TextField, MenuItem } from '@mui/material';
+import { Form, Formik, Field } from 'formik';
+import { ContactPageLaptopImage } from '../../assets';
+import Heading from '../../common/heading/heading.component';
 import phoneCall from '../../assets/phoneCall.png';
 import mailUs from '../../assets/mailUs.png';
 import location from '../../assets/location.png';
 import workingHours from '../../assets/workingHours.png';
-import { ContactPageLaptopImage } from '../../assets';
-import { Form, Formik, Field } from 'formik';
-import { TextField, MenuItem } from '@mui/material';
 import Notification from '../../common/notification/notification.component';
+import './contacts.style.css';
 
-const ContactsPage = () => {
+const Contacts = () => {
   const [notificationConfig, setNotificationConfig] = useState({
     text: '',
     severity: '',
@@ -131,32 +131,10 @@ const ContactsPage = () => {
               </Form>
             )}
           </Formik>
-          {/* <form className="justForm">
-            <label htmlFor="name">Name</label>
-            <input type="text" placeholder="Your Name..." />
-            <label htmlFor="email">Email</label>
-            <input type="text" placeholder="Your Email Address..." />
-            <label htmlFor="topic">Topic</label>
-            <select name="Topic" id="">
-              <option value="Choose Option">Choose Option...</option>
-              <option value="E-Commerce Support">E-Commerce Support</option>
-              <option value="Online Orders">Online Orders</option>
-              <option value="Sales&Marketing">Sales & Marketing</option>
-              <option value="Cult of E-Commerce">Cult of E-Commerce</option>
-            </select>
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="subject"
-              placeholder="Write Message..."
-              id=""
-              cols="40"
-              rows="10"
-            ></textarea>
-          </form> */}
         </div>
       </div>
     </>
   );
 };
 
-export default ContactsPage;
+export default Contacts;

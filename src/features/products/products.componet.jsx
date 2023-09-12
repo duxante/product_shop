@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import './products.style.css';
+import { products } from '../../data/products';
 import Heading from '../../common/heading/heading.component';
 import Item from '../../common/item/item.component';
-import { products } from '../../data/products';
+import './products.style.css';
 
 const Products = ({ handleAddProductToCart }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);

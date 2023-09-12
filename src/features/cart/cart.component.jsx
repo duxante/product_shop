@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import './cartPage.style.css';
+import './cart.style.css';
 import CheckoutDetails from './components/checkoutDetails.component';
 import CheckoutItems from './components/checkoutItems.component';
 
-const CartPage = ({ selectedProducts, removeProductFromCart, clearCart }) => {
+const Cart = ({ selectedProducts, removeProductFromCart, clearCart }) => {
   const [checkoutVisible, setCheckoutVisible] = useState(false);
   const orderStepsHandle = () => {
     setCheckoutVisible(true);
@@ -22,4 +22,4 @@ const CartPage = ({ selectedProducts, removeProductFromCart, clearCart }) => {
   );
 };
 
-export default CartPage;
+export default Cart;

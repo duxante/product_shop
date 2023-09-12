@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom';
 import { homeBlogPost } from '../../../../data/blog';
-import './blogHolder.style.css';
 import Heading from '../../../../common/heading/heading.component';
 import BlogItem from '../../../../common/blogItem/blogItem.component';
-import { Link } from 'react-router-dom';
+import './blogHolder.style.css';
 
 const Blog = () => {
   return (
@@ -20,7 +20,7 @@ const Blog = () => {
         ))}
       </div>
       <div className="seeAllArticles">
-        <Link to="/blogPage">SEE ALL ARTICLES</Link>
+        <Link to="/blog">SEE ALL ARTICLES</Link>
       </div>
     </div>
   );

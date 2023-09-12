@@ -1,24 +1,21 @@
-import './App.css';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './index.css';
 import Navbar from './features/navbar/navbar.componet';
 import Home from './features/home/home.component';
 import NotFound from './features/notFound/notFound.component';
-import CategoriesPage from './features/categories/categoriesPage.component';
+import Categories from './features/categories/categories.component';
 import ShopAll from './features/shop/shopAll.component';
-import BlogPage from './features/blogPage/blogPage.component';
-import BrandsPage from './features/brandsPage/brandsPage.component';
+import Blog from './features/blog/blog.component';
+import Brands from './features/brands/brands.component';
 import Footer from './features/footer/footer.component';
 import Products from './features/products/products.componet';
-import AboutPage from './features/aboutPage/aboutPage.componet';
-import ContactsPage from './features/contactsPage/contactsPage.component';
-import ProfilePage from './features/profilePage/profilePage.component';
-import CartPage from './features/cartPage/cartPage.component';
-import Practice from './practice/practice.component';
-import { useState } from 'react';
+import About from './features/about/about.componet';
+import Contacts from './features/contacts/contacts.component';
+import Profile from './features/profile/profile.component';
+import Cart from './features/cart/cart.component';
 import Notification from './common/notification/notification.component';
-import MainPractice from './nextPractice/mainPractice.component';
-import Users from './03082023Practice/users.component';
+import './App.css';
+import './index.css';
 
 function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -72,30 +69,27 @@ function App() {
         <Navbar selectedProducts={selectedProducts} />
         <Routes>
           <Route path="/" element={<Home handleAddProductToCart={handleAddProductToCart} />} />
-          <Route path="/categories" element={<CategoriesPage />} />
+          <Route path="/categories" element={<Categories />} />
           <Route path="/shop" element={<ShopAll />} />
-          <Route path="/blogPage" element={<BlogPage />} />
-          <Route path="/brandsPage" element={<BrandsPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/brands" element={<Brands />} />
           <Route
             path="/products"
             element={<Products handleAddProductToCart={handleAddProductToCart} />}
           />
-          <Route path="/aboutPage" element={<AboutPage />} />
-          <Route path="/contactsPage" element={<ContactsPage />} />
-          <Route path="/profilePage" element={<ProfilePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/profile" element={<Profile />} />
           <Route
-            path="/cartPage"
+            path="/cart"
             element={
-              <CartPage
+              <Cart
                 removeProductFromCart={removeProductFromCart}
                 clearCart={clearCart}
                 selectedProducts={selectedProducts}
               />
             }
           />
-          <Route path="/nextPractice" element={<MainPractice />} />
-          <Route path="/practice" element={<Practice />} />
-          <Route path="/users" element={<Users />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import Item from '../../../../common/item/item.component';
 import { trendingItems } from '../../../../data/products';
-import './trendingBar.style.css';
+import Item from '../../../../common/item/item.component';
 import Heading from '../../../../common/heading/heading.component';
+import './trendingBar.style.css';
 
 const TrendingBar = ({ handleAddProductToCart }) => {
   return (

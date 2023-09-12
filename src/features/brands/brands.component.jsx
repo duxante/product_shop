@@ -1,5 +1,5 @@
 import Heading from '../../common/heading/heading.component';
-import './brandsPage.style.css';
+import './brands.style.css';
 import {
   Acer,
   Apple,
@@ -15,7 +15,7 @@ import {
   Sony,
 } from '../../assets';
 
-const BrandsPage = () => {
+const Brands = () => {
   return (
     <div className="popularBrandsPageHolder">
       <Heading headingText="Brands" />
@@ -73,4 +73,4 @@ const BrandsPage = () => {
   );
 };
 
-export default BrandsPage;
+export default Brands;

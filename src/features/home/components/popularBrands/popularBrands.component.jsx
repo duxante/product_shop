@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import './popularBrands.style.css';
-import Heading from '../../../../common/heading/heading.component';
 import { Apple, HpLogo, Intel, Microsoft, Samsung, Sony } from '../../../../assets';
+import Heading from '../../../../common/heading/heading.component';
+import './popularBrands.style.css';
 
 const PopularBrands = () => {
   return (
@@ -15,7 +15,7 @@ const PopularBrands = () => {
         <Intel />
         <HpLogo />
       </div>
-      <Link className="allBrandsLink" to="/brandsPage">
+      <Link className="allBrandsLink" to="/brands">
         SEE ALL BRANDS
       </Link>
     </div>

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import './footer.style.css';
 import logo1 from '../../assets/logo1.png';
 import facebookLogo from '../../assets/facebookLogo.png';
 import twitterLogo from '../../assets/twitterLogo.png';
@@ -9,13 +8,14 @@ import workingHours from '../../assets/workingHours.png';
 import phoneCall from '../../assets/phoneCall.png';
 import mailUs from '../../assets/mailUs.png';
 import location from '../../assets/location.png';
+import './footer.style.css';
 
 const Footer = () => {
   return (
     <div className="footerHolder">
       <div className="navigationContact">
         <div className="logoAndSocialNetworks">
-          <img className="mainFooterLogo" src={logo1} alt="logo image" />
+          <img className="mainFooterLogo" src={logo1} alt="logo" />
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. At dolorem, sed sunt
             repudiandae ut, deserunt quia labore laborum amet vel reiciendis, omnis veniam vero
@@ -31,9 +31,9 @@ const Footer = () => {
         <div className="catalog">
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
-          <Link to="/blogPage">Blog</Link>
-          <Link to="/aboutPage">About</Link>
-          <Link to="/contactsPage">Contacts</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contacts">Contacts</Link>
         </div>
         <div className="phoneAndEmail">
           <div className="iconAndPhone">

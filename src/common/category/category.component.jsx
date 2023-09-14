@@ -1,6 +1,6 @@
-import './oneCategory.style.css';
+import './category.style.css';
 
-const OneCategory = ({ img, title, price }) => {
+const Category = ({ img, title, price }) => {
   return (
     <div className="oneCategoryHolder">
       {img}
@@ -12,4 +12,4 @@ const OneCategory = ({ img, title, price }) => {
   );
 };
 
-export default OneCategory;
+export default Category;

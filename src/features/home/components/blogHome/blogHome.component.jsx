@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
-import { homeBlogPost } from '../../../../data/blog';
+import { blog } from '../../../../data/blog';
 import Heading from '../../../../common/heading/heading.component';
 import BlogItem from '../../../../common/blogItem/blogItem.component';
-import './blogHolder.style.css';
+import './blogHome.style.css';
 
 const Blog = () => {
+  const blogHome = blog.slice(0, 2);
   return (
     <div className="blogHolder">
       <Heading headingText="Blog" />
       <div className="blogItemHolder">
-        {homeBlogPost.map((oneBlog, index) => (
+        {blogHome.map((oneBlog, index) => (
           <BlogItem
             key={index}
             image={oneBlog.image}

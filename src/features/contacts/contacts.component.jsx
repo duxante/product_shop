@@ -46,19 +46,19 @@ const Contacts = () => {
           <div className="store">
             <h3>Store</h3>
             <div className="imagesAndData">
-              <img src={phoneCall} alt="" />
+              <img src={phoneCall} alt="phone" />
               <p>808-955-8441</p>
             </div>
             <div className="imagesAndData">
-              <img src={mailUs} alt="" />
+              <img src={mailUs} alt="mail icon" />
               <p>example@honolulu.com</p>
             </div>
             <div className="imagesAndData">
-              <img src={location} alt="" />
+              <img src={location} alt="pin point" />
               <p>Keeaumoku St, Honolulu, HI 96814</p>
             </div>
             <div className="imagesAndData">
-              <img src={workingHours} alt="" />
+              <img src={workingHours} alt="watch" />
               <p>Daily 10:00 - 22:00h</p>
             </div>
           </div>

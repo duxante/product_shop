@@ -20,16 +20,14 @@ const ProfilePage = () => {
     comment: '',
   };
 
-  const handleUpdateProfile = (values) => {
-    console.log(values);
-  };
+  const handleUpdateProfile = (values) => {};
 
   return (
     <div className="profilePageHolder">
       <div className="shortPersonalInfo">
         <img
           src="https://i.dailymail.co.uk/1s/2022/08/26/17/61760545-0-image-a-325_1661531382104.jpg"
-          alt=""
+          alt="gamer screaming"
         />
         <div className="nameAndDateJoinedUnderProfilePhoto">
           <h2>Spomenko Dukic</h2>

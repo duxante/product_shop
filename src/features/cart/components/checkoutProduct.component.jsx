@@ -4,7 +4,7 @@ const CheckoutProduct = ({ image, category, name, price, removeProductFromCart, 
   return (
     <div className="oneProduct">
       <div className="oneProductDescribe">
-        <img src={image} alt="" />
+        <img src={image} alt="one product" />
         <div>
           <p className="productName">{category}</p>
           <p>{name}</p>

@@ -14,7 +14,7 @@ const MacImage = () => {
 };
 
 const MobileImage = () => {
-  return <img src={mobilePhones} alt="Mac" />;
+  return <img src={mobilePhones} alt="Mobile" />;
 };
 
 const CameraImage = () => {
@@ -49,7 +49,7 @@ const Categorie1 = () => {
   return (
     <img
       src="https://www.evetech.co.za/repository/ProductImages/gaming-laptop-best-deals-banner-v1.png"
-      alt="Categorie 1 Image"
+      alt="Banner for best deals"
     />
   );
 };
@@ -58,37 +58,66 @@ const Categorie2 = () => {
   return (
     <img
       src="https://www.transparentpng.com/thumb/tablet/android-tablets-png-clipart-wUmLWH.png"
-      alt="Categorie 2 Image"
+      alt="Android tablets"
     />
   );
 };
 
 const Categorie3 = () => {
-  return (
-    <img src="https://www.pngmart.com/files/13/Smartwatch-PNG-Pic.png" alt="Categorie 3 Image" />
-  );
+  return <img src="https://www.pngmart.com/files/13/Smartwatch-PNG-Pic.png" alt="Smartwatches" />;
 };
 
 const Categorie4 = () => {
   return (
     <img
       src="https://www.pngall.com/wp-content/uploads/2/Console-PNG-Picture.png"
-      alt="Categorie 4 Image"
+      alt="Console"
     />
   );
 };
 
 const Categorie5 = () => {
-  return <img src="https://pngimg.com/d/photo_camera_PNG101644.png" alt="Categorie 5 Image" />;
+  return <img src="https://pngimg.com/d/photo_camera_PNG101644.png" alt="Nikon" />;
 };
 
 const Categorie6 = () => {
   return (
     <img
       src="https://www.pngall.com/wp-content/uploads/2016/03/Smartphone-Download-PNG.png"
-      alt="Categorie 6 Image"
+      alt="Smartphone"
     />
   );
+};
+
+const Categorie7 = () => {
+  return (
+    <img
+      src="https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/pdp/product-carousel/black/pc-studiopro-black-thrqtr-right.jpg"
+      alt="Headphones"
+    />
+  );
+};
+
+const Categorie8 = () => {
+  return (
+    <img
+      src="https://static-jaymart.com/ecom/public/1yZy0ryH9xceNFowRpGLxYXJy97.jpg"
+      alt="Keyboards"
+    />
+  );
+};
+
+const Categorie9 = () => {
+  return (
+    <img
+      src="https://a.allegroimg.com/original/11d2ed/acbb21b9496e902c25b030ffc1fc/EDIFIER-HECATE-G5000-GLOSNIKI-2-0-88W-BT-APTX-USB-Marka-Edifier"
+      alt="Speakers"
+    />
+  );
+};
+
+const Categorie10 = () => {
+  return <img src="https://m.media-amazon.com/images/I/71l3dq9GtuL.jpg" alt="Laptop stands" />;
 };
 
 const Apple = () => {
@@ -140,7 +169,7 @@ const HpLogo = () => {
 };
 
 const SamsungTransparent = () => {
-  return <img src={samsung4logopngtransparent} />;
+  return <img src={samsung4logopngtransparent} alt="Samsung 4" />;
 };
 
 const LGLogo = () => {
@@ -193,7 +222,7 @@ const ContactPageLaptopImage = () => {
     <img
       className="mainImage"
       src="https://cdn.mos.cms.futurecdn.net/MsG53PJxNQu3N9gXxLpG43.jpg"
-      alt="Laptop image"
+      alt="Laptop"
     />
   );
 };
@@ -268,6 +297,10 @@ export {
   Categorie4,
   Categorie5,
   Categorie6,
+  Categorie7,
+  Categorie8,
+  Categorie9,
+  Categorie10,
   Apple,
   Samsung,
   Sony,

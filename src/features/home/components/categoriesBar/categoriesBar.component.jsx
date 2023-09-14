@@ -1,19 +1,15 @@
 import { Link } from 'react-router-dom';
 import { categories } from '../../../../data/categories';
-import OneCategory from '../../../../common/category/oneCategory.component';
+import Category from '../../../../common/category/category.component';
 import './categoriesBar.style.css';
 
 const CategoriesBar = () => {
+  const categoriesHome = categories.slice(0, 6);
   return (
     <div className="categoriesBarHolder">
       <div className="categoriesNavigation">
-        {categories.map((oneItem, index) => (
-          <OneCategory
-            key={index}
-            img={oneItem.img}
-            title={oneItem.title}
-            price={oneItem.price}
-          />
+        {categoriesHome.map((oneItem, index) => (
+          <Category key={index} img={oneItem.img} title={oneItem.title} price={oneItem.price} />
         ))}
       </div>
       <div className="seeAllCategories">

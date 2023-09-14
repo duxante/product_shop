@@ -1,5 +1,15 @@
-import { Categorie1, Categorie3, Categorie4, Categorie5, Categorie6 } from '../assets';
-import { Categorie2 } from '../assets';
+import {
+  Categorie1,
+  Categorie2,
+  Categorie3,
+  Categorie4,
+  Categorie5,
+  Categorie6,
+  Categorie7,
+  Categorie8,
+  Categorie9,
+  Categorie10,
+} from '../assets';
 
 export const categories = [
   {
@@ -30,6 +40,26 @@ export const categories = [
   {
     img: <Categorie6 />,
     title: 'Smartphones',
+    price: 119.0,
+  },
+  {
+    img: <Categorie7 />,
+    title: 'Headphones',
+    price: 119.0,
+  },
+  {
+    img: <Categorie8 />,
+    title: 'Keyboards',
+    price: 119.0,
+  },
+  {
+    img: <Categorie9 />,
+    title: 'Speakers',
+    price: 119.0,
+  },
+  {
+    img: <Categorie10 />,
+    title: 'Laptop stands',
     price: 119.0,
   },
 ];

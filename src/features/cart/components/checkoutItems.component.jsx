@@ -18,7 +18,6 @@ const CheckoutItems = ({ orderStepsHandle, selectedProducts, removeProductFromCa
       let discountedPrice = totalPrice - totalPrice * coupon.discount;
       setTotalPriceAfterDiscount(discountedPrice);
     }
-    console.log(coupon);
   };
 
   return (
